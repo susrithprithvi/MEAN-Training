@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script>
+    
+      //find celsius from fahrenheit javascript function
+      //by tutorialsmade.com
+      
+      function findCelsius(){
+        var fahrenheit = document.getElementById("fahrenheit").value;
+        var celsius;
+        if(fahrenheit != ''){
+          celsius = (fahrenheit - 32) * 5/9;
+          document.getElementById("output").innerHTML = celsius;
+        }else{
+          document.getElementById("output").innerHTML = "Please enter a value!";
+        }
+      }
+    
+    </script>
+  </head>
+  <body>
+    <h2>Enter Fahrenheit</h2>
+    <input type="text" id="fahrenheit" />
+    <button onclick="findCelsius()" >Find Celsius</button>
+ 
+    <h4>Output: <span id="output"></span></h4>
+  </body>
+</html>

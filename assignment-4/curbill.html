@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>current Bill</title>
+</head>
+<body>
+ <h2>current Bill</h2>
+<script type="text/javascript">
+	
+
+	function currentbill(usage)
+	 {
+		if (usage<=100){
+
+			bill = usage*2;
+			console.log("Bill amount is:" + bill);
+			
+		}
+		 if (usage>100 && usage<200)
+		{
+			bill = usage*3;
+			console.log("Bill amount is:" + bill);
+			
+		}
+		if (usage>500)
+		{ 
+			bill = usage*4;
+			console.log("Bill amount is:" + bill);
+		}
+	}
+
+	currentbill(60);
+</script>
+
+</body>
+</html>
